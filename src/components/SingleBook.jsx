@@ -4,21 +4,22 @@ import Button from 'react-bootstrap/Button'
 
 class SingleBook extends Component {
     render() {
+        let book = this.props.book
         return (
             <div className="col">
-                <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={this.props.img} />
+                <Card>
+                    <Card.Img variant="top" src={book.img} />
                     <Card.Body>
                         <Card.Title>
-                            {this.props.title}
+                            {book.title}
                         </Card.Title>
                         <Card.Text>
                         <div className="d-flex justify-content-around">
                             <div>
-                                {this.props.category}
+                                {book.category}
                             </div>
                             <div>
-                                €{this.props.price}
+                                €{book.price}
                             </div>                            
                         </div>
                         <div>

@@ -16,6 +16,6 @@ export default WarningSign;
 
 
 /*
-Create a component WarningSign which receives as a property a text. This text should be presented inside an.
-Alert of type danger
+Create a component MyBadge. You can pass with the property the text inside the badge and the color. This
+component should use internally a Badge react-bootstrap component
 */
